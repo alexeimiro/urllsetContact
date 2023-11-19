@@ -18,7 +18,7 @@ const Typewriter = ({ text }) => {
   }, [text]);
 
   return (
-    <div className='text-xl font-sans overflow-hidden' style={{ width: '500px' }}>
+    <div className='text-xl font-sans overflow-hidden' /*style={{ width: '500px' }}*/>
       <p>{currentText}</p>
     </div>
   );
