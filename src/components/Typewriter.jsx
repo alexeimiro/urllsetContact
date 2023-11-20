@@ -18,8 +18,8 @@ const Typewriter = ({ text }) => {
   }, [text]);
 
   return (
-    <div className='text-xl font-sans overflow-hidden' /*style={{ width: '500px' }}*/>
-      <p>{currentText}</p>
+    <div className='text-3xl font-sans overflow-hidden p-70 mt- mb-16 '>
+      <p className='font-bold bg-gradient-to-r from-pink-500 to-violet-500 bg-clip-text text-transparent'>{currentText}</p>
     </div>
   );
 };

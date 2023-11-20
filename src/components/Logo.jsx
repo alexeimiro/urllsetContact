@@ -2,10 +2,11 @@
 import React from 'react';
 import urllsetImage from '../images/urllset.svg'; // Adjust the path accordingly
 
-const Logo = () => {
+const Logo = ({size}) => {
   return (
-    <div>
-      <img src={urllsetImage} alt="Urllset Logo" />
+    <div className='p-10'>
+      <img src={urllsetImage} 
+      alt="Urllset Logo"/>
     </div>
   );
 };

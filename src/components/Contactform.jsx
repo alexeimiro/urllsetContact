@@ -40,7 +40,7 @@ const Contactform = () => {
                 placeholder='Email'
                 name='user_email' required />
                 <textarea name="message" placeholder='Your message' cols="30" rows="10"></textarea>
-                <button type='submit' className='rounded-lg border-2 bg-gradient-to-r from-green-500 to-green-950 hover:bg-green-800 shadow-md'>Send message</button>
+                <button type='submit' className='rounded-lg border-2 bg-gradient-to-r transition'>Send message</button>
             </form>
         </div>
     </section>
