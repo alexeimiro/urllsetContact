@@ -14,7 +14,7 @@ const Description = () => {
   </div>
   <div class="w-full sm:w-1/2 p-8 ">
   <h1 className='text-2xl mb-3'>Global Reach, Local Impact </h1>
-    <p class="text-white">Join a community that knows no borders. [Platform Name] brings together investors from around the globe, fostering collaboration and shared success. Your investments have the power to create meaningful change, both globally and locally.</p>
+    <p class="text-white">Join a community that knows no borders. Urllset brings together investors from around the globe, fostering collaboration and shared success. Your investments have the power to create meaningful change, both globally and locally.</p>
   </div>
   <div class="w-full sm:w-1/2 p-8 ">
   <h1 className='text-2xl mb-3'>Secure and Transparent </h1>
