@@ -5,7 +5,15 @@
 body {
     font-family: 'Verdana', monospace; 
     color: aliceblue;
-}
+    margin: 0;
+    padding: 0;
+    background-image: url('./images/theme.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+  }
+
 
 img {
     pointer-events: none;
@@ -28,5 +36,15 @@ textarea {
 textarea::placeholder {
     color: white
 }
+
+.custom-bg-class {
+    background-image: url('./images/Rectangle 4.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 300px; /* Set the height as needed */
+  }
+
+  
 
 
