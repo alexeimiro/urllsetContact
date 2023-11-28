@@ -38,7 +38,7 @@ const Contactform = () => {
   };
 
   return (
-    <section className="shadow-lg p-5 rounded-lg">
+    <section className="shadow-lg p-5 rounded-lg bg-black w-full">
       <div>
         {!isSubmitted && (
           <h2 className="text-center text-2xl lg:text-3xl py-4">

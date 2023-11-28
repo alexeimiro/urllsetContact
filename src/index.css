@@ -3,48 +3,50 @@
 @tailwind utilities;
 
 body {
-    font-family: 'Verdana', monospace; 
-    color: aliceblue;
-    margin: 0;
-    padding: 0;
-    background-image: url('./images/theme.png');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    min-height: 100vh;
-  }
-
+  font-family: 'Verdana', monospace; 
+  color: aliceblue;
+  margin: 0;
+  padding: 0;
+  background-image: url('./images/theme.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
 
 img {
-    pointer-events: none;
+  pointer-events: none;
 }
 
-input  {
-    background-color: #11a6ec25;
-    
+input, textarea {
+  background-color: #11a6ec25;
+  width: 100%;
+  padding: 10px; /* Adjust as needed */
+  box-sizing: border-box;
+  margin-bottom: 15px; /* Adjust as needed */
 }
 
-input::placeholder {
-    color: white
+input::placeholder, textarea::placeholder {
+  color: white;
 }
 
+/* ContactForm.css */
 
-textarea {
-    background-color: #11a6ec25;
+/* Initial state of the form */
+section {
+  transition: all 0.3s ease;
 }
 
-textarea::placeholder {
-    color: white
+/* Animation when submitting the form */
+section.submitting {
+  clip-path: circle(100%);
 }
 
-.custom-bg-class {
-    background-image: url('./images/Rectangle 4.jpg');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    height: 300px; /* Set the height as needed */
-  }
-
-  
-
-
+/* Style for the submitted state */
+section.submitted {
+  background-color: transparent; /* Set the background to transparent or any other style you want */
+}

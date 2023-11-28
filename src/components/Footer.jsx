@@ -7,7 +7,7 @@ const Footer = () => {
         Legal Disclaimer: Investment involves risks. Past performance is not indicative of future results.
         Consider your objectives and Urllset's terms before investing.
       </p>
-      <p className="mt-4">
+      <p className="mt-4 px-4">
         Urllset © 2023. All rights reserved.
       </p>
     </div>
