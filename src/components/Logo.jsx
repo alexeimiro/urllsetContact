@@ -1,6 +1,7 @@
 // Logo.jsx
 import React, { useState, useEffect } from 'react';
 import urllsetImage from '../images/urllset.svg';
+import { Link } from "react-router-dom";
 
 const Logo = () => {
   const [scale, setScale] = useState(0.6);
@@ -42,9 +43,11 @@ const Logo = () => {
   };
 
   return (
+    <Link to="/">
     <div style={logoContainerStyles}>
       <img src={urllsetImage} alt="Urllset Logo" style={logoImageStyles} className='' />
     </div>
+    </Link>
   );
 };
 

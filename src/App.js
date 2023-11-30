@@ -1,6 +1,7 @@
 import React from 'react';
 import './index.css';
 import { BrowserRouter as Router, Link, Route, Switch } from 'react-router-dom';
+import { Link as ScrollLink, Element } from 'react-scroll';
 import Logo from './components/Logo';
 import WelcomeText from './components/WelcomeText';
 import Description from './components/Description';
@@ -15,11 +16,18 @@ function App() {
       </header>
       <main className="mt-40 flex flex-col items-center max-w-5xl mx-auto">
         <WelcomeText />
-        <Link className='bg-blue-500 hover:bg-blue-700 text-white w-35 py-2 px-4 rounded shadow mt-4' to="/Get-in-touch">
-          Get In Touch
-        </Link>
+        <ScrollLink
+          className='bg-blue-500 hover:bg-blue-700 text-white w-35 p-3 rounded shadow mt-4 duration-500 ease-in-out'
+          to="contactFormSection"
+          smooth={true}
+          duration={500}
+        >
+          Get in touch
+        </ScrollLink>
         <Description />
-        <Contactform />
+        <Element name="contactFormSection"> 
+          <Contactform />
+        </Element>
       </main>
       <Footer />
     </div>

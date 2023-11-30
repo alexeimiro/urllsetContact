@@ -2,6 +2,7 @@ import React, { useEffect } from 'react';
 import CountUp from 'react-countup';
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
+import userPanelImage from '../images/Frame 50.png'
 
 const Description = () => {
   useEffect(() => {
@@ -33,7 +34,7 @@ const Description = () => {
         <div className="grid grid-cols-1 sm:grid-cols-2">
 
           {/* Section 1 with animated count-up */}
-          <div className={`flex-1 p-10 rounded-md bg-blue-500 m-1 animate-me sm:col-span-2 flex flex-col items-center justify-center`}>
+          <div className={`flex-1 p-10 rounded-md bg-blue-500 m-2 animate-me sm:col-span-2 flex flex-col items-center justify-center`}>
             <CountUp end={23} duration={3} decimals={2} className="text-5xl font-bold pb-8 text-white" suffix="% ROI" />
             <h3 className="text-lg font-bold text-white text-center pb-3">Invest and Own a Piece of the Future</h3>
             <p className="text-center text-white">
@@ -44,7 +45,7 @@ const Description = () => {
           </div>
 
           {/* Section 2 */}
-          <div className={`flex-1 p-6 rounded-md bg-gray-900 m-1 animate-me text-white`}>
+          <div className={`flex-1 p-6 rounded-md bg-gray-900 m-2 animate-me text-white`}>
             <h2 className="text-xl font-bold text-center pb-5">A New Era in Property Investment</h2>
             <p className="text-center">
               Urllset is not just a platform; it's a revolution in collective investment in both
@@ -54,7 +55,7 @@ const Description = () => {
           </div>
 
           {/* Section 3 */}
-          <div className={`flex-1 p-6 rounded-md bg-gray-900 m-1 animate-me text-white`}>
+          <div className={`flex-1 p-6 rounded-md bg-gray-900 m-2 animate-me text-white`}>
             <h3 className="text-lg font-bold text-center pb-5">Hassle-Free Property Management</h3>
             <p className="text-center">
               Dive into the real estate market without the complexities of property management.
@@ -63,8 +64,14 @@ const Description = () => {
             </p>
           </div>
 
-          {/* Section 4 */}
-          <div className={`flex-1 p-6 rounded-md bg-white text-black m-1 animate-me`}>
+          
+          {/* Section 4 with userPanelImage */}
+          <div className={'sm:col-span-2 m-2 animate-me'}>
+            <img src={userPanelImage} />
+          </div>
+
+          {/* Section 5 */}
+          <div className={`flex-1 p-6 rounded-md bg-white text-black m-2 animate-me`}>
             <h3 className="text-lg font-bold text-center pb-5">Secure Your Financial Independence with Urllset</h3>
             <p className="text-center">
               Investing with Urllset stands as a premier opportunity to secure financial
@@ -73,14 +80,13 @@ const Description = () => {
             </p>
           </div>
 
-          {/* Section 5 */}
-          <div className={`flex-1 p-6 rounded-md bg-gray-900 m-1 animate-me text-white`}>
+          {/* Section 6 */}
+          <div className={`flex-1 p-6 rounded-md bg-gray-900 m-2 animate-me text-white`}>
             <h3 className={`text-lg font-bold text-center pb-5`}>Join the Urllset Community Today</h3>
             <p className="text-center">
               Ready to be part of a unique crowdfunding platform where every investment counts?
               Whether you're investing $100 or more, start your journey with Urllset.
             </p>
-
             <p className="text-center text-white">
               Elevate your investment portfolio with Urllset. Click to explore and embark on your
               path to smarter, more rewarding real estate investment.
