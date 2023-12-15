@@ -1,6 +1,6 @@
 import React from 'react';
 import './index.css';
-import { BrowserRouter as Router, Link, Route, Switch } from 'react-router-dom';
+
 import { Link as ScrollLink, Element } from 'react-scroll';
 import Logo from './components/Logo';
 import WelcomeText from './components/WelcomeText';
@@ -33,5 +33,7 @@ function App() {
     </div>
   );
 }
+
+
 
 export default App;

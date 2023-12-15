@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import AnimatedGradientText from  "./AnimatedGradientText"
 
 const TextAppear = ({ text }) => {
   const [opacity, setOpacity] = useState(0);
@@ -35,10 +36,9 @@ const TextAppear = ({ text }) => {
   }, [text]);
 
   return (
-    <div className='text-5xl font-sans overflow-hidden  mb-5 mx-8 '>
+    <div className='text-xl font-sans overflow-hidden  mb-5 mx-8 '>
       <p style={{ opacity }} className='font-bold text-white  bg-clip-text text-transparent'>
-        Your Gateway to Empowered Real Estate Investment!
-
+      <AnimatedGradientText> Your Gateway to Empowered Real Estate Investment! </AnimatedGradientText>
 
       </p>
       <p style={{ opacity: welcomeOpacity }} className=' text-xl text-white mt-5'>

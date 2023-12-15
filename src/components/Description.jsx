@@ -4,6 +4,7 @@ import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import userPanelImage from '../images/Frame 50.png'
 
+
 const Description = () => {
   useEffect(() => {
     // Register the ScrollTrigger plugin
