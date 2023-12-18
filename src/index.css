@@ -51,3 +51,26 @@ section.submitted {
   background-color: transparent; /* Set the background to transparent or any other style you want */
 }
 
+
+@keyframes gradientAnimation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.gradient-text {
+  font-weight: bold;
+  background: linear-gradient(90deg, #ff8a00, #e52e71, #1b86f9);
+  background-size: 200% 200%;
+  color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+  animation: gradientAnimation 10s linear infinite;
+}
+

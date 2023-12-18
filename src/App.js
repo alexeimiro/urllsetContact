@@ -14,7 +14,7 @@ function App() {
       <header>
         <Logo />
       </header>
-      <main className="mt-40 flex flex-col items-center max-w-5xl mx-auto">
+      <main className="mt-40 flex flex-col items-center max-w-6xl mx-auto">
         <WelcomeText />
         <ScrollLink
           className='bg-blue-500 hover:bg-blue-700 text-white w-35 p-3 rounded shadow mt-4 duration-500 ease-in-out'

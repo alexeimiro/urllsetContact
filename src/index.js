@@ -3,7 +3,6 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-import GetInTouch from './pages/get-in-touch';
 
 import {
   createBrowserRouter,
@@ -14,10 +13,6 @@ const router = createBrowserRouter([
   {
     path: "/",
     element: <App/>,
-  },
-  {
-    path: "Get-in-touch",
-    element: <GetInTouch/>,
   },
 ]);
 
